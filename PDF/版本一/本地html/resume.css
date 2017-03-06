@@ -1,0 +1,200 @@
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+		.clearfix:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.wrap{
+			width: 90vw;
+			/*height: 90vh;*/
+			margin: 0px auto;
+		}
+
+		.name{
+			position: relative;
+			background: rgb(32,33,35);
+			width: 30%;
+			height: 240px;
+			float: left;
+			color: #fff;
+		}
+		.position{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 60%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		.position h1{
+			margin-bottom: 10px;
+		}
+		.introduction{
+			background: rgb(174,58,59);
+			width: 70%;
+			float: right;
+			color: #fff;
+		}
+		.contact{
+			padding: 20px 10px 20px 30px;
+			float: left;
+		}
+		.contact li:nth-child(1){
+			margin-bottom: 10px;
+		}
+		.contact li{
+			padding-bottom: 10px;
+		}
+		.introduction .phone, .introduction .icon{
+			border-radius: 50%;
+			padding: 5px;
+			background: #fff;
+			color: rgb(174,58,59);
+		}
+		.introduction .evalute{
+			padding: 20px 10px 20px 20px;
+			float: right;
+		}
+		.evalute li:nth-child(1){
+			margin-bottom: 10px;
+		}
+		.evalute li {
+			padding-bottom: 5px;
+		}
+		
+		.main{
+			width: 50%;
+			background: rgb(50,50,50);
+			color: #fff;
+			float: left;
+		}
+		/*.experience, .projects{
+			background: rgb(36,37,41);
+			width: 50%;
+			color: #fff;
+			padding: 30px 20px 0px 30px;
+
+			float: left;
+		}*/
+		.experience h3{
+			margin-top: 20px;
+			margin-bottom: 10px;
+			color: rgb(174,58,59);
+			padding-left: 20px;
+		}
+		.experience .date{
+			float: left;
+			margin-right: 25px;
+			padding-left: 20px;
+		}
+		.experience .company{
+			float: left;
+			width: 56%;
+			word-wrap: break-word;
+			word-break: normal;
+			/*margin-right: 20px; */
+		}
+		.projects h3{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			color: rgb(174,58,59);
+			padding-left: 20px;
+		}
+		.projects .project-internet{
+			float: left;
+			margin-right: 22px;
+			padding-left: 20px;
+		}
+		.gap-bigger{
+			margin-bottom: 8px;
+		}
+		.gap{
+			margin-bottom: 5px;
+		}
+		.projects .project-internet-introduction{
+			float: left;
+			width: 75%;
+			word-wrap: break-word;
+			word-break: normal; 
+		}
+		.projects .project-sanbao{
+			float: left;
+			margin-right: 6px;
+			margin-top: 15px;
+			padding-left: 20px;
+		}
+		.projects .project-sanbao-introduction{
+			float: left;
+			width: 75%;
+			word-break: break-all;
+			margin-top: 15px; 
+		}
+		.projects .demo{
+			float: left;
+			margin-right: 53px;
+			margin-top: 15px;
+			padding-left: 20px;
+		}
+		.projects .project-demo{
+			float: left;
+			width: 75%;
+			word-wrap: break-word;
+			word-break: normal;
+			margin: 15px 0 31px 0; 
+		}
+		.projects .demo-list{
+			width: 50px;
+			border-radius: 5px;
+			background: rgb(174,58,59);
+			padding: 5px;
+		}
+
+		.education, .skills{
+			background: rgb(32,33,35);
+			width: 50%;
+			color: #fff;
+			float: left;
+			/*padding-bottom: 15px;*/
+		}
+		.education ul{
+			padding: 20px 20px 0px 30px;
+		}
+		.education h3{
+			color: rgb(174,58,59);
+		}
+		.education .duration{
+			float: left;
+			margin-top: 10px;
+		}
+		.education .postgraduate{
+			float: left;
+			margin-top: 10px;
+			padding-left: 121px;
+		}
+		.education .undergraduate{
+			float: left;
+			margin-top: 10px;
+			padding-left: 92px;
+			margin-bottom: 30px;
+		}
+		.skills h3{
+			color: rgb(174,58,59);
+			padding: 10px 20px 10px 30px;
+		}
+		.skills p:first-of-type{
+			padding: 20px 20px 0px 30px;
+		}
+		.skills p:nth-of-type(2){
+			padding: 10px 20px 19px 30px;
+		}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>resume</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_5a2mqgvkuik9.css">
+	<link rel="stylesheet" media="all" href="./resume.css">
+	<script src='http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js'></script>
+	<script src='http://cdn.hcharts.cn/highcharts/highcharts.js'></script>
+	<script src='http://cdn.hcharts.cn/highcharts/modules/exporting.js'></script>
+</head>
+<body>
+	<div class="wrap clearfix">
+		<div class="name">
+			<div class="position">
+				<h1>曹婷婷</h1>
+				<h3>应聘职位：前端工程师</h3>
+			</div>	
+		</div>
+		<div class="introduction">
+			<ul class="contact">
+				<li><h3>联系方式</h3></li>
+				<li><span class="iconfont phone">&#xe622;</span>&nbsp; 18805159302</li>
+				<li><span class="iconfont icon">&#xe634;</span>&nbsp; 江苏省南京市鼓楼区新模范马路66号南京邮电大学</li>
+				<li><span class="iconfont icon">&#xe705;</span>&nbsp; 995298776@qq.com</li>
+				<li><span class="iconfont icon">&#xe6a8;</span>&nbsp; <a href="https://cttin.github.io/">cttin's Blog</a></li>
+				<li><span class="iconfont icon">&#xe69f;</span>&nbsp; <a href="https://github.com/cttin">cttin</a></li>
+			</ul>
+			<ul class="evalute">
+				<li><h3>自我评价</h3></li>
+				<li>较强的适应能力与学习能力</li>
+				<li>强烈的技术热情与挑战能力</li>
+				<li>具有较强的沟通能力与团队合作精神</li>
+				<li>态度端正，做事认真</li>
+				<li>喜欢与牛人接触，不断提升自己</li>
+			</ul>
+		</div>
+		<div class='main'>
+			<div class="experience clearfix">
+				<ul class="clearfix">
+					<li><h3>实习经历</h3></li>
+					<li class="date">
+						2016.09.05-2017.01.22
+					</li>
+					<li class="company">
+						<h5 class="gap-bigger">南京友谱信息科技有限公司</h5>
+						<p class="gap">前端开发工程师</p>
+						<p>作为公司的前端开发工程师，负责公司项目中前端部分的工作。在实习期间，参与了一个完整的项目：物联网金融，包括页面的设计、实时数据的采集以及显示、画图、登入注销等等；还参与了另一个项目的bug修复阶段，主要是对测试所提出的bug进行修改，调整优化代码。</p>
+					</li>
+				</ul>
+			</div>
+			<div class="projects clearfix">
+				<ul class="clearfix">
+					<li><h3>项目经验</h3></li>
+					<li class="project-internet">
+						物联网金融
+					</li>
+					<li class="project-internet-introduction">
+						<p class="gap-bigger">项目前端开发</p>
+						<p class="gap">为银行开发的用户借贷款服务系统</p>
+						<p>使用的主要技术为react+redux+webpack+es6，用户和银行两个身份登入，主要为银行实现给用户贷款的物资凭证。参与的前端的页面开发主要有：地图（在地图上显示银行下面的库区信息以及报警信息）、实时数据的采集（利用canvas画图显示到页面当中）、ERP出入库记录(ECharts画图显示)、客户、仓单、仓单详情、仓单认证、日志、报警等等。</p>
+					</li>
+					<li class="project-sanbao">
+						三宝海关系统
+					</li>
+					<li class="project-sanbao-introduction">
+						<p class="gap-bigger">项目前端bug修复</p>
+						<p class="gap">为三宝公司提供审批流程系统</p>
+						<p>使用的主要技术为vue+webpack+es6，主要是为三宝公司提供一系列合同以及报销的审批流程。在项目中主要负责了一些bug的修复以及页面的部分修改。</p>
+					</li>
+					<li class="demo">
+						作品
+					</li>
+					<li class="project-demo">
+						<p class="demo-list gap"><a href="http://htmlpreview.github.io/?https://github.com/cttin/demo/blob/master/index.html">DEMO</a></p>
+						<p>综合运用html、css还原设计图，其中用到了一些常用布局。根据语义化选择标签，其中应用了盒模型，浮动，负margin,定位等知识点。fixed定位固定导航栏，用clearfix类清除浮动，避免父元素高度塌陷，绝对定位和负margin实现上下居中布置。除此之外，会利用学的知识写一些自己喜欢的东西。</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="education">
+			<ul class="clearfix">
+				<li><h3>教育经历</h3></li>
+				<li class="duration">2015.09-至今</li>
+				<li class="postgraduate">
+					<p>南京邮电大学</p>
+					<p>通信与信息工程学院&nbsp; 信号与信息处理</p>
+				</li>
+				<li class="duration">2011.09-2015.06</li>
+				<li class="undergraduate">
+					<p>南昌航空大学</p>
+					<p>信息工程学院&nbsp; 通信工程</p>
+				</li>
+			</ul>
+		</div>
+	
+		<div class="skills">
+			<h3>skills</h3>
+			<div id='container' style="width: 100%;height: 400px"></div>
+			<p>熟悉 Html/CSS，掌握常见布局、浮动、定位、盒模型、BFC等核心概念，掌握常见的布局方式。对代码可读性、规范性、复用性、语义化有一定认识，对CSS兼容有一定经验，能熟练开发符合w3c规范的常见页面。 </p>
+			<p>熟悉原生JavaScript的使用，掌握事件模型、DOM操作、Ajax、Jsonp、闭包、原型链、继承等相关概念的原理和使用方法。</p>
+			<p>掌握jQuery的使用方法，使用过react、vue框架，使用react进行了较长时间的开发，基本能独立进行开发。曾经学习过一段时间的后端语言，了解一些基本的知识。</p>
+			<p>熟悉Git、Sublime、WebStorm等前端相关工具的使用。</p>
+			<p>对前端工程化、模块化有一定认识，熟悉互联网产品流程、前端开发流程、前后端协同开发流</p>
+		</div>
+
+		<script>
+			$(function () {
+		    $('#container').highcharts({
+		    	chart: {
+            backgroundColor: 'rgb(32,33,35)',
+            color: '#fff',
+            type: 'line'
+        	},
+	        title: {
+            text: '',
+            x: -20 //center
+	        },
+	        subtitle: {
+            text: '',
+            x: -20
+	        },
+	        xAxis: {
+            categories: ['JavaScript', 'HTML', 'CSS', 'jQuery', 'react', 'vue', 'php', 'java'],
+            labels: {
+							style: {
+								color: 'red',//刻度颜色
+								fontSize:'14px' //刻度字体大小
+							}
+						}
+	        },
+	        yAxis: {
+            title: {
+                text: '百分比'
+            },
+            plotLines: [{
+              value: 0,
+              width: 1,
+              color: '#808080'
+            }],
+            min: 0,
+            max: 100,
+	        },
+	        tooltip: {
+	          valueSuffix: '%'	
+	        },
+	        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0,
+            itemStyle: {
+            	color: '#fff',
+            }
+	        },
+	        series: [{
+            name: '掌握程度',
+            data: [70.0, 80.0, 80.0, 75.5, 75, 40, 20, 24]
+	        }]
+		    });
+		  });
+		</script>
+</body>
+</html>

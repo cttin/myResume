@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>resume</title>
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_5r0enlpc4whtzkt9.css">
+	<script src='http://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js'></script>
+	<script src='http://cdn.hcharts.cn/highcharts/highcharts.js'></script>
+	<script src='http://cdn.hcharts.cn/highcharts/modules/exporting.js'></script>
+	<style>
+
+		*{
+			margin: 0;
+			padding: 0;
+			font-size: 18px;
+			line-height: 25px;
+		}
+		li{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+			color: #fff;
+		}
+		.clearfix:after{
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.wrap{
+			/*width: 90vw;*/
+			/*height: 90vh;*/
+			/*margin: 0px auto;*/
+			font-size: 13px;
+			font-family: 'Avenir', Helvetica, Arial, sans-serif, "Microsoft Yahei";
+			/*letter-spacing: 1px*/
+		}
+
+		.name{
+			position: relative;
+			background: rgb(32,33,35);
+			width: 20%;
+			height: 240px;
+			float: left;
+			color: #fff;
+		}
+		.position{
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, -50%);
+			text-align: center;
+		}
+		.position h1{
+			margin-bottom: 10px;
+		}
+		.introduction{
+			background: rgb(174,58,59);
+			width: 40%;
+			float: left;
+			color: #fff;
+		}
+		.contact{
+			padding: 10px 10px 10px 30px;
+			float: left;
+		}
+		.contact li:nth-child(1){
+			margin-bottom: 10px;
+		}
+		.contact li{
+			padding-bottom: 10px;
+		}
+		.introduction .phone, .introduction .icon{
+			border-radius: 50%;
+			padding: 5px;
+			background: #fff;
+			color: rgb(174,58,59);
+		}
+		.about{
+			background: rgb(174,58,59);
+			width: 40%;
+			color: #fff;
+			float: left;
+		}
+		.about .evalute{
+			padding: 10px 0 10px 0;
+		}
+		.evalute li:nth-child(1){
+			margin-bottom: 10px;
+		}
+		.evalute li {
+			padding-bottom: 5px;
+		}
+		
+		.main{
+			width: 50%;
+			background: rgb(50,50,50);
+			color: #fff;
+			float: left;
+		}
+		/*.experience, .projects{
+			background: rgb(36,37,41);
+			width: 50%;
+			color: #fff;
+			padding: 30px 20px 0px 30px;
+
+			float: left;
+		}*/
+		.experience h3{
+			margin-top: 20px;
+			margin-bottom: 10px;
+			color: rgb(174,58,59);
+			padding-left: 20px;
+		}
+		.experience .date{
+			float: left;
+			margin-right: 15px;
+			padding-left: 20px;
+		}
+		.experience .company{
+			float: left;
+			width: 60%;
+			word-wrap: break-word;
+			word-break: normal;
+			/*margin-right: 20px; */
+		}
+		/*.projects{
+			width: 95%;
+		}*/
+		.projects h3{
+			margin-top: 10px;
+			margin-bottom: 10px;
+			color: rgb(174,58,59);
+			padding-left: 20px;
+		}
+		.projects .project-internet{
+			float: left;
+			margin-right: 22px;
+			padding-left: 20px;
+		}
+		.gap-bigger{
+			margin-bottom: 8px;
+		}
+		.gap{
+			margin-bottom: 5px;
+		}
+		.projects .project-internet-introduction{
+			float: left;
+			width: 67%;
+			word-wrap: break-word;
+			word-break: normal; 
+		}
+		.projects .project-sanbao{
+			float: left;
+			margin-right: 6px;
+			margin-top: 15px;
+			padding-left: 20px;
+		}
+		.projects .project-sanbao-introduction{
+			float: left;
+			width: 67%;
+			word-break: break-all;
+			margin-top: 15px; 
+		}
+		.projects .demo{
+			float: left;
+			/*margin-right: 53px;*/
+			margin-top: 15px;
+			padding-left: 20px;
+		}
+		.projects .project-demo{
+			float: left;
+			width: 67%;
+			word-wrap: break-word;
+			word-break: normal;
+			margin: 15px 0 10px 75px; 
+		}
+		.projects .demo-list{
+			width: 56px;
+			border-radius: 5px;
+			background: rgb(174,58,59);
+			padding: 5px;
+		}
+
+		.education, .skills{
+			background: rgb(32,33,35);
+			width: 50%;
+			color: #fff;
+			float: left;
+			/*padding-bottom: 15px;*/
+		}
+		.education ul{
+			padding: 20px 20px 0px 30px;
+		}
+		.education h3{
+			color: rgb(174,58,59);
+		}
+		.education .duration{
+			float: left;
+			margin-top: 10px;
+		}
+		.education .postgraduate{
+			float: left;
+			margin-top: 10px;
+			padding-left: 80px;
+		}
+		.education .undergraduate{
+			float: left;
+			margin-top: 10px;
+			padding-left: 50px;
+			margin-bottom: 30px;
+		}
+		.skills h3{
+			color: rgb(174,58,59);
+			padding: 10px 20px 10px 30px;
+		}
+		.skills p:first-of-type{
+			padding: 20px 20px 0px 30px;
+		}
+		.skills p:last-of-type{
+			padding: 10px 20px 19px 30px;
+		}
+		.skills .ability{
+			padding: 10px 20px 0 30px;
+		}
+		/*#container{
+			width: 100%;
+			padding-right: 20px;
+			height: 400px;
+		}*/
+	</style>
+</head>
+<body>
+	<div class="wrap clearfix">
+		<div class="name">
+			<div class="position">
+				<h1>曹婷婷</h1>
+				<h3>应聘职位：前端工程师</h3>
+			</div>	
+		</div>
+		<div class="introduction">
+			<ul class="contact">
+				<li><h3>个人信息</h3></li>
+				<li><span class="iconfont icon">&#xe707;</span>&nbsp;  <a href="http://cttin.coding.me/Resume/dist/">在线简历</a></li>
+				<li><span class="iconfont phone">&#xe622;</span>&nbsp; 18805159302</li>
+				<li><span class="iconfont icon">&#xe705;</span>&nbsp; christinaaaa@foxmail.com</li>
+				<li><span class="iconfont icon">&#xe6a8;</span>&nbsp; <a href="http://www.jianshu.com/u/60aa6140c8ef">博客</a></li>
+				<li><span class="iconfont icon">&#xe69f;</span>&nbsp; <a href="https://github.com/cttin">Github</a></li>
+			</ul>
+			<!-- <ul class="evalute">
+				<li><h3>自我评价</h3></li>
+				<li>较强的适应能力与学习能力</li>
+				<li>强烈的技术热情与挑战能力</li>
+				<li>具有较强的沟通能力与团队合作精神</li>
+				<li>态度端正，做事认真</li>
+				<li>喜欢与牛人接触，不断提升自己</li>
+			</ul> -->
+		</div>
+		<div class="about">
+			<ul class="evalute">
+				<li><h3>自我评价</h3></li>
+				<li>较强的适应能力与学习能力</li>
+				<li>强烈的技术热情与挑战能力</li>
+				<li>具有较强的沟通能力与团队合作精神</li>
+				<li>态度端正，做事认真</li>
+				<li>喜欢写代码，热爱编程</li>
+				<li>喜欢与牛人接触，不断提升自己</li>
+			</ul>
+		</div>
+		<div class='main'>
+			<div class="experience clearfix">
+				<ul class="clearfix">
+					<li><h3>实习经历</h3></li>
+					<li class="date">
+						2016.09-2017.02
+					</li>
+					<li class="company">
+						<h5 class="gap-bigger">南京友谱信息科技有限公司</h5>
+						<p class="gap">前端开发工程师</p>
+						<p>作为公司的前端开发工程师，负责公司项目中前端部分的工作。在实习期间，参与了一个完整的项目：物联网金融，包括页面的设计、实时数据的采集以及显示、画图、登入注销等等，主要技术为react；还参与了另一个项目的bug修复阶段，主要是对测试所提出的bug进行修改，调整优化代码，主要技术为vue。</p>
+					</li>
+				</ul>
+			</div>
+			<div class="projects clearfix">
+				<ul class="clearfix">
+					<li><h3>项目经验</h3></li>
+					<li class="project-internet">
+						物联网金融
+					</li>
+					<li class="project-internet-introduction">
+						<p class="gap-bigger">项目前端开发</p>
+						<p class="gap">为银行开发的用户借贷款服务系统</p>
+						<p>使用的主要技术为：react + redux + webpack + es6，用户和银行两个身份登入，主要为银行实现给用户贷款的物资凭证。参与的前端的页面开发主要有：地图（在地图上显示银行下面的库区信息以及报警信息）、实时数据的采集（利用canvas画图显示到页面当中）、ERP出入库记录(ECharts画图显示)、客户、仓单、仓单详情、仓单认证、日志、报警等等。</p>
+					</li>
+					<li class="project-sanbao">
+						三宝海关系统
+					</li>
+					<li class="project-sanbao-introduction">
+						<p class="gap-bigger">项目前端bug修复</p>
+						<p class="gap">为三宝公司提供审批流程系统</p>
+						<p>使用的主要技术为vue+webpack+es6，主要是为三宝公司提供一系列合同以及报销的审批流程。在项目中主要负责一些bug的修复以及页面的部分修改。</p>
+					</li>
+					<li class="demo">
+						作品
+					</li>
+					<li class="project-demo">
+						<p class="demo-list gap"><a href="http://cttin.coding.me/Demo/">DEMO</a></p>
+						<p>根据语义化选择标签，综合运用html、css、JavaScript。其中用到了一些常用布局，以及盒模型，浮动，负margin、定位、懒加载、Ajax、jQuery等知识点以及Vue框架。实现过程中注意了性能的优化、以及代码的模块化开发。</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="education">
+			<ul class="clearfix">
+				<li><h3>教育经历</h3></li>
+				<li class="duration">2015.09-至今</li>
+				<li class="postgraduate">
+					<p>南京邮电大学</p>
+					<p>信号与信息处理</p>
+				</li>
+				<li class="duration">2011.09-2015.06</li>
+				<li class="undergraduate">
+					<p>南昌航空大学</p>
+					<p>通信工程</p>
+				</li>
+			</ul>
+		</div>
+	
+		<div class="skills">
+			<h3>skills</h3>
+			<div id='container' style="width: 85%;height: 400px"></div>
+			<p>熟悉 Html/CSS，掌握常见布局、浮动、定位、盒模型、BFC等核心概念，掌握常见的布局方式。对代码可读性、规范性、复用性、语义化有一定认识，对CSS兼容有一定经验，能熟练开发符合w3c规范的常见页面。</p>
+			<p class="ability">熟悉原生JavaScript的使用，掌握事件模型、DOM操作、Ajax、Jsonp、闭包、原型链、继承等相关概念的原理和使用方法。</p>
+			<p class="ability">掌握jQuery的使用方法，使用过react、vue框架，使用react进行了一段时间的开发，基本能独立进行开发。曾经学习过一段时间的后端语言，了解一些基本的知识。</p>
+			<p class="ability">熟悉Git、Sublime、WebStorm等前端相关工具的使用。</p>
+			<p>对前端工程化、模块化有一定认识，熟悉互联网产品流程、前端开发流程、前后端协同开发流</p>
+		</div>
+
+		<script>
+			$(function () {
+		    $('#container').highcharts({
+		    	chart: {
+            backgroundColor: 'rgb(32,33,35)',
+            color: '#fff',
+            type: 'line',
+        	},
+	        title: {
+            text: '',
+            x: -20 //center
+	        },
+	        subtitle: {
+            text: '',
+            x: -20
+	        },
+	        xAxis: {
+            categories: ['JavaScript', 'HTML', 'CSS', 'jQuery', 'react', 'vue']
+	        },
+	        yAxis: {
+            title: {
+                text: '百分比'
+            },
+            plotLines: [{
+              value: 0,
+              width: 1,
+              color: '#808080'
+            }],
+            min: 0,
+            max: 100,
+	        },
+	        tooltip: {
+	          valueSuffix: '%'	
+	        },
+	        legend: {
+            layout: 'vertical',
+            align: 'right',
+            verticalAlign: 'middle',
+            borderWidth: 0,
+            itemStyle: {
+            	color: '#fff',
+            }
+	        },
+	        series: [{
+            name: '掌握程度',
+            data: [70.0, 80.0, 80.0, 75.5, 70, 40]
+	        }]
+		    });
+		  });
+		</script>
+</body>
+</html>
