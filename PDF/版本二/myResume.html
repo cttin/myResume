@@ -24,7 +24,7 @@
 			color: #9055A2;
 		}
 		.wrap{
-			padding: 30px;
+			padding: 25px;
 			font-family: 'Avenir', Helvetica, Arial, sans-serif, "Microsoft Yahei";
 			font-size: 14px;
 			/*background: url(./resume.jpg) 0 0 no-repeat;*/
@@ -83,7 +83,7 @@
 			margin: 5px 0;
 		}
 		.date em:first-of-type{
-			margin-right: 100px;
+			margin-right: 90px;
 		}
 		
 		.border{
@@ -94,12 +94,15 @@
 		/*.border{
 			border-bottom: 2px dashed #9055A2;
 		}*/
-		.project-internet, .project-sanbao, .website, .resume, .more{
+		.project-internet, .project-sanbao, .face-recognition, .website, .resume, .more{
 			margin: 7px 0 7px 0;
 		}
-		.project-internet-introduction li, .project-sanbao-introduction li{
+		.project-internet-introduction li, .project-sanbao-introduction li, .face-recognition-introduction li{
 			margin-left: 18px;
 			list-style-type: circle !important;
+		}
+		.work h5{
+			display: inline-block;
 		}
 		.website h5{
 			display: inline-block;
@@ -182,31 +185,45 @@
 						<em><span class="iconfont">&#xe634;</span>&nbsp;南京</em>
 					</li>
 					<li class="job-dec">
-						<p>作为公司的前端开发工程师，负责公司项目中前端部分的工作，使用的主要技术为：react和vue。在实习期间，参与了两个项目：物联网金融（react），从项目开始到基本完成都参与其中；三宝海关系统（vue），主要是对测试所提出的bug进行修改，调整优化代码。</p>
+						<p>作为公司的前端开发工程师，负责公司项目中前端部分的工作，使用的主要技术为：react和vue。</p>
 					</li>
 				</ul>
 				<ul class="work">
 					<li><h3>项目经验</h3></li>
 					<li class="project-internet">
-						<h5>物联网金融</h5>
+						<h5>物联网监管服务平台</h5>
+						<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="iconfont">&#xe61a;</span>&nbsp; 2016.11-2017.01</em>
 					</li>
 					<li class="project-internet-introduction border">
 						<ul>
-							<li>为银行开发的用户借贷款服务系统。</li>
-							<li>用户和银行两个身份登入，主要为银行实现给用户贷款的物资凭证以及货品出入库记录。前端的页面开发主要有：地图（在地图上显示银行下面的库区信息以及报警信息）、实时数据的采集（利用canvas画图显示到页面当中）、ERP出入库记录(ECharts画图显示)、客户、仓单、仓单详情、仓单认证、日志、报警等等。</li>
-							<li>使用的主要技术为：react + redux + webpack + es6。</li>
-							<li>参与整个项目，经过大概两个半月，功能基本实现。</li>
+							<li>为银行开发的用户借贷款服务系统</li>
+							<li>技术栈：react + redux + webpack + es6</li>
+							<li>通过负责此项目的前端工作，基本能使用react进行开发</li>
 						</ul>
 					</li>
 					<li class="project-sanbao">
 						<h5>三宝海关系统</h5>
+						<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="iconfont">&#xe61a;</span>&nbsp; 2016.09-2016.10</em>
 					</li>
-					<li class="project-sanbao-introduction">
+					<li class="project-sanbao-introduction border">
 						<ul>
-							<li>为三宝公司提供审批流程系统。</li>
-							<li>主要功能是实现三宝公司内部一系列合同以及报销的审批流程。</li>
-							<li>使用的主要技术为vue+webpack+es6。</li>
-							<li>负责一些bug的修复以及页面的部分修改。</li>
+							<li>为三宝公司提供审批流程系统</li>
+							<li>技术栈：vue + webpack + es6</li>
+							<li>熟悉了项目开发的流程，对框架的认识、运用以及调试能力有了很大的提高</li>
+						</ul>
+					</li>
+					<li class="face-recognition">
+						<h5>基于人脸识别的智能门禁系统</h5>
+						<em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class="iconfont">&#xe61a;</span>&nbsp; 2016.01-2016.04</em>
+					</li>
+					<li class="face-recognition-introduction">
+						<ul>
+							<li>第二届全国大学生物联网技术与应用“三创大赛” &nbsp;&nbsp;&nbsp;&nbsp;全国三等奖</li>
+							<li>技术栈：java + c</li>
+							<li>对模块的传输协议以及运用java开发有了更深的认识</li>
 						</ul>
 					</li>
 				</ul>
@@ -231,32 +248,32 @@
 					<li>
 						<ul class="knowledge border">
 							<li>HTML / CSS</li>
-							<li>掌握常见布局、浮动、定位、盒模型、BFC等核心概念</li>
-			        <li>熟悉HTML5、CSS3动画、可准确还原设计稿</li>
-			        <li>熟悉W3C规范、开发调试、浏览器兼容、常用布局、响应式</li>
-							<li>能够使用bootstrap、ECharts以及stylus等CSS预处理器</li>
+							<li>常见布局、浮动、定位、盒模型、BFC等核心概念</li>
+			        <li>HTML5、CSS3动画、可准确还原设计稿</li>
+			        <li>W3C规范、开发调试、浏览器兼容、常用布局、响应式</li>
+							<li>bootstrap、ECharts以及stylus等CSS预处理器</li>
 						</ul>
 					</li>
 					<li>
 						<ul class="knowledge border">
 							<li>JavaScript</li>
-			        <li>熟悉原生Javascript、事件模型、DOM操作、计时器、闭包、jQuery</li>
-			        <li>熟悉Ajax、jsonp、跨域、原型链、DOM操作、继承等相关概念</li>
+			        <li>原生Javascript、事件模型、DOM操作、计时器、闭包、jQuery</li>
+			        <li>Ajax、jsonp、跨域、原型链、DOM操作、继承等相关概念</li>
 						</ul>
 					</li>
 					<li>
 						<ul class="knowledge border">
 							<li>框架、工具</li>
-			        <li>熟悉npm，能够使用webpack等前端自动化工具</li>
-			        <li>熟悉React、Redux，基本能够独立开发</li>
-			        <li>了解Vue，知道基本知识</li>
-			        <li>熟悉Sublime、WebStorm、git</li>
+			        <li>npm，能够使用webpack等前端自动化工具</li>
+			        <li>React、Redux，基本能够独立开发</li>
+			        <li>Vue</li>
+			        <li>Sublime、WebStorm、git</li>
 						</ul>
 					</li>
 					<li>
 						<ul class="knowledge border">
 							<li>后端</li>
-			        <li>熟悉webserver、http、XMLHttpRequest</li>
+			        <li>http、XMLHttpRequest</li>
 							<li>能使用php做简单接口调试</li>
 						</ul>
 					</li>
@@ -282,11 +299,13 @@
 					<li class="duration"><em><span class="iconfont">&#xe61a;</span>&nbsp; 2015.09-至今</em></li>
 					<li class="postgraduate border">
 						<h5>南京邮电大学</h5>
+						<span>硕士&nbsp; &nbsp;</span>
 						<span>信号与信息处理</span>
 					</li>
 					<li class="duration"><em><span class="iconfont">&#xe61a;</span>&nbsp; 2011.09-2015.06</em></li>
 					<li class="undergraduate">
 						<h5>南昌航空大学</h5>
+						<span>本科&nbsp; &nbsp;</span>
 						<span>通信工程</span>
 					</li>
 				</ul>

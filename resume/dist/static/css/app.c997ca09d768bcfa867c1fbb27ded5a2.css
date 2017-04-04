@@ -198,7 +198,7 @@ a {
   margin-top: 10px;
 }
 .info .info-bg .desc {
-  margin-top: 350px;
+  margin-top: 270px;
   letter-spacing: 2px;
 }
 @media only screen and (max-width: 1280px) {
@@ -247,6 +247,9 @@ ul {
   font-weight: 600;
 }
 .work .items .project-sanbao {
+  font-weight: 600;
+}
+.work .items .face-recognition {
   font-weight: 600;
 }
 .clearfix:after {
@@ -428,4 +431,4 @@ ul {
   margin-top: 30px;
   font-weight: 600;
 }
-/*# sourceMappingURL=app.0beb3dba7330ff4087c8d5e46485a002.css.map*/
+/*# sourceMappingURL=app.c997ca09d768bcfa867c1fbb27ded5a2.css.map*/

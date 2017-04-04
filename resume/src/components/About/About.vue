@@ -55,7 +55,7 @@
         p
          margin-top: 10px
       .desc
-        margin-top: 350px
+        margin-top: 270px
         letter-spacing: 2px
         @media only screen and (max-width: 1280px)
           line-height: 25px
